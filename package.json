@@ -1,0 +1,23 @@
+{
+  "name": "blog_mark2_api",
+  "version": "1.0.0",
+  "description": "블로그 Mark2의 API 서버",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeekc0308/blog_mark2_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeekc0308/blog_mark2_api/issues"
+  },
+  "homepage": "https://github.com/jeekc0308/blog_mark2_api#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4"
+  }
+}
