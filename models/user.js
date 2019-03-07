@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
         unique: true
     }
 });
-userSchema.index({
+userSchema.indexes({
     username: 1,
     nickname: 1,
 });
