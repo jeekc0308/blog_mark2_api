@@ -41,10 +41,11 @@ module.exports = () => {
     app.use(express.urlencoded({ extended: false }));
 
     app.use("/user", require('./user'));
+    app.use("/post", require('./post'));
 
     app.use((err, req, res, next) => {
         const statusCode = err.statusCode || 500;
-        res.status(statusCode).json(errorTemplate(statusCode, err.message));
+        res.status(statusCode).json(errorTemplate(statusCode, "서버에서 오류가 발생했습니다."));
     });
     app.use((req, res, next) => {
         res.status(404).json(errorTemplate(404, "Page not found"))

@@ -7,7 +7,7 @@ MongoDB 필요
 * PORT - 서버가 실행될 포트
 * HOST - 서버의 호스트 값. 기본값은 express에서 보내주는 host 값.
 * (* 주의: JWT 토큰의 헤더로 사용되기 때문에 다른 사이트와 안 겹치는 고유한 값이어야 한다.)
-* JWT_SECRET - JWT의 Secret Key. 기본값은 무작위로 이미 하드코딩됨.
+* JWT_SECRET (필요) - JWT의 Secret Key.
 * DB_USERNAME - DB의 Username. 없다면 그냥 로그인된다.
 * DB_PASSWORD - DB의 Password. 없다면 그냥 로그인된다.
 * DB_PORT - DB가 켜져있는 포트. 없다면 기본값으로 로그인된다.
